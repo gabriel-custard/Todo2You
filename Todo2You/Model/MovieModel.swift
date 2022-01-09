@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct MovieResponse {
+struct MovieResponse: Decodable {
     let posterPath: String
     let adult: Bool
     let overview, releaseDate: String
