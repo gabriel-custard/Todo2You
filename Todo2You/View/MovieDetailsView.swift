@@ -1,8 +1,8 @@
 //
-//  ContentView.swift
+//  MovieDetailsView.swift
 //  Todo2You
 //
-//  Created by Gabriel Custódio on 07/01/22.
+//  Created by Gabriel Custódio on 09/01/22.
 //
 
 import SwiftUI
