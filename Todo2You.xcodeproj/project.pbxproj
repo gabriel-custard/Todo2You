@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F605D544DE56DEC5D27F15C /* Pods_Todo2You.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2B8AA4F52E7C4B0EBD93A1 /* Pods_Todo2You.framework */; };
 		6E78A7BB27885AC100703DC3 /* Todo2YouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78A7BA27885AC100703DC3 /* Todo2YouApp.swift */; };
 		6E78A7BD27885AC100703DC3 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E78A7BC27885AC100703DC3 /* MovieDetailsView.swift */; };
 		6E78A7BF27885AC500703DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E78A7BE27885AC500703DC3 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04FC52B6B14EB72CB0E1937D /* Pods-Todo2You.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo2You.release.xcconfig"; path = "Target Support Files/Pods-Todo2You/Pods-Todo2You.release.xcconfig"; sourceTree = "<group>"; };
 		6E78A7B727885AC100703DC3 /* Todo2You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo2You.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E78A7BA27885AC100703DC3 /* Todo2YouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo2YouApp.swift; sourceTree = "<group>"; };
 		6E78A7BC27885AC100703DC3 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
@@ -23,6 +25,9 @@
 		6E78A7C127885AC500703DC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E78A7CB278B48FB00703DC3 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		6E78A7CE278B4A3F00703DC3 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		6E78A7D1278B733B00703DC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		89F91BE51FDF39CF49287E76 /* Pods-Todo2You.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todo2You.debug.xcconfig"; path = "Target Support Files/Pods-Todo2You/Pods-Todo2You.debug.xcconfig"; sourceTree = "<group>"; };
+		FE2B8AA4F52E7C4B0EBD93A1 /* Pods_Todo2You.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todo2You.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F605D544DE56DEC5D27F15C /* Pods_Todo2You.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C2D7C097151C225E3DA464D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE2B8AA4F52E7C4B0EBD93A1 /* Pods_Todo2You.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E78A7AE27885AC100703DC3 = {
 			isa = PBXGroup;
 			children = (
 				6E78A7B927885AC100703DC3 /* Todo2You */,
 				6E78A7B827885AC100703DC3 /* Products */,
+				81359F3D6BFF83C9B66172F5 /* Pods */,
+				4C2D7C097151C225E3DA464D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +71,7 @@
 		6E78A7B927885AC100703DC3 /* Todo2You */ = {
 			isa = PBXGroup;
 			children = (
+				6E78A7D1278B733B00703DC3 /* Info.plist */,
 				6E78A7C8278B457000703DC3 /* Model */,
 				6E78A7CA278B458600703DC3 /* View */,
 				6E78A7C9278B457800703DC3 /* Presenter */,
@@ -97,6 +114,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		81359F3D6BFF83C9B66172F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89F91BE51FDF39CF49287E76 /* Pods-Todo2You.debug.xcconfig */,
+				04FC52B6B14EB72CB0E1937D /* Pods-Todo2You.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E78A7C527885AC500703DC3 /* Build configuration list for PBXNativeTarget "Todo2You" */;
 			buildPhases = (
+				5C01A18870E94C6A1162D45F /* [CP] Check Pods Manifest.lock */,
 				6E78A7B327885AC100703DC3 /* Sources */,
 				6E78A7B427885AC100703DC3 /* Frameworks */,
 				6E78A7B527885AC100703DC3 /* Resources */,
+				6F79D521E72155657ABB25DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +152,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
@@ -161,6 +192,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C01A18870E94C6A1162D45F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Todo2You-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F79D521E72155657ABB25DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Todo2You/Pods-Todo2You-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Todo2You/Pods-Todo2You-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Todo2You/Pods-Todo2You-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E78A7B327885AC100703DC3 /* Sources */ = {
@@ -295,6 +368,7 @@
 		};
 		6E78A7C627885AC500703DC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F91BE51FDF39CF49287E76 /* Pods-Todo2You.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,9 +377,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Todo2You/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Todo2You/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = MovieDetailsView;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -314,7 +392,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobile2you.Todo2You;
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,6 +402,7 @@
 		};
 		6E78A7C727885AC500703DC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04FC52B6B14EB72CB0E1937D /* Pods-Todo2You.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -332,9 +411,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Todo2You/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Todo2You/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = MovieDetailsView;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -343,7 +426,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobile2you.Todo2You;
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
